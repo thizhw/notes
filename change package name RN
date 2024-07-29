@@ -1,0 +1,28 @@
+
+--------------------------------------------------------------------------------
+
+Let original App name be: com.myApp Let New App Name: 'com.newname.myApp`
+
+    android\app\src\main\AndroidManifest.xml
+
+Rename xml attribute: `package="com.newname.myApp"
+
+--------------------------------------------------------------------------------
+
+    android\app\src\main\java\com\[yourAppName]\MainActivity.java
+
+Rename first line from package com.myApp; To package com.newname.myApp;
+
+--------------------------------------------------------------------------------
+
+    android\app\src\main\java\com\[yourAppName]\MainApplication.java
+
+Rename first line To package com.newname.myApp;
+
+--------------------------------------------------------------------------------
+
+    android\app\build.gradle
+
+On the defaultConfig rename applicationId to "com.newname.myApp"
+
+--------------------------------------------------------------------------------
